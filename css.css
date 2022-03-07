@@ -1,130 +1,59 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-	
-h1{
-    font-family: Helvetica, sans-serif;
-    font-weight: 200;
+body {
+  background-color: #eee;
+  font-family: "Helvetica";
 }
-html{
-    background-color: #4682B4;
-    padding-top: 10px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-img{
-    width: 100px;
+
+.header{
+  text-align: center;
 }
-.card{
-    background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.75);
-    border-radius: 3px;
-    width: 350px;
-    margin: 0 auto;
+img {
+  max-width: 15%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
 }
-.card-avatar{
-border: 3px solid #00ADEF;
-border-radius: 500px;
-display: block;
-height: 100px;
-width: 100px;
-margin: 20px auto;
-overflow: hidden;
+.description {
+  font-style: italic;
 }
-.card-bio{
-    padding: 20px;
+
+#survey-form {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
-.name{
-    font-family: sans-serif;
-    font-size: 24px;
-    text-align: center;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background: #1b1b32;
+  align-items: center;
+  text-align: justify;
+  padding: 10px 5px;
+  border: 1px #000 solid;
+  border-radius: 5px;
+  margin: 10px;
+  width: 30em;
 }
-.contact-info{
-    text-align: center;
+
+#name-label {
+  font-weight: 700;
 }
-.contact-info li{
-    display: inline;
-    font-size: 14px;
-    text-align: center;
-}
-.card-section{
-padding: 20px 20px 40px;
-}
-.card-title{
-    color: #959595;
-    font-family: sans-serif;
-    font-size: 18p;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-strong{
-    font-weight: bold;
-}
-.button{
-    background-color: #c4DC6E;
-    padding: 10px 15px;
-    margin: 0 auto;
-    text-align: center;
-    color: #FFFFFF;
-    display: block;
+
+.form-group > .form-control {
+  background-color: #ddd;
 }
