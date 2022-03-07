@@ -1,42 +1,136 @@
-
-<!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<title>The Home of Jeff Roll</title>
-</head>
-<body>
-<div class="card">
-	<div></div>
-	<div class="card-avatar">
-		<img src="images/jeff2.jpg" alt="headshot">
-	</div>	
-		<div class="card-bio">
-			<h1 class="name">Jeff Roll</h1>
-			<ul class="contact-info">
-				<li>jeffrey.roll380@gmail.com</li>
-				<li>&bull;</li>
-				<li>847-417-2977</li>		
-			</ul>
-		</div>
-	<hr>
-	<div class="card-section">
-		<h3 class="card-title">About Me</h3>
-		<p>I'm a fraud prevention & payment specialist.</p>	
-	</div>
-	<div class="card-section">
-			<h3 class="card-title">Current Position</h3>
-			<ul>
-				<li><strong>Company Name</strong> cleverbridge, Inc</li>
-				<li><strong>Current Position:</strong> Fraud Prevention Specialist</li>
-				<li><strong>Responsibilities:</strong> Order screening, fighting/preventing chargebacks, & responding to customer inquiries</li>
-				<li><strong>Years of Service:</strong> 6 years</li>
-			</ul>
-	</div>
-		<div class="card-section">
-		<a href="mailto:jeffrey.roll@gmail.com" class="button">Contact Me</a>
-		</div>
-		</div>
-	</body>
-</html>
+<link rel="stylesheet" href="css.css">
+  <div id="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Dottie Survey Form</h1>
+      <p id="description" class="description text-center">A short survey about the world's cutest dog</p>
+    </header>
+<img id ="dottie" src="https://64.media.tumblr.com/5428daf558af0eafe0f53a77c8050b1e/af0f1b91dc93d04c-a7/s540x810/5ec2a44ee4f16fef08cc5fc488c18fb266ebaf4c.jpg">
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text"
+               name="name"
+               id="name"
+               class="form-control"
+               placeholder="Enter your name"
+               required
+               />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input 
+               type="email"
+               name="email"
+               id="email"
+               class="form-control"
+               placeholder="Enter your Email"
+               required
+               />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for= "number">Age (optional)<span class="clue"</span></label>
+        <input 
+               type="number"
+               name= "age"
+               id= "number"
+               min= "10"
+               max= "99"
+               class= "form-control"
+               placeholder= "Age"
+               required
+               </input>
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+          </div>
+        <div class="form-group">
+          <p>Would you recommend Dottie to a friend?</p>
+          <label>
+            <input
+                   name="user-recommend"
+                   value="definitely"
+                   type="radio"
+                   class="input-radio"
+                   checked
+                   />Definitely</label>
+          <label>
+            <input
+                   name="user-recommend"
+                   value="maybe"
+                   type="radio"
+                   class="input-radio"
+                   />Maybe</label
+            <label>
+            <input
+                   name="user-recommend"
+                   value="not-sure"
+                   type="radio"
+                   class="input-radio"
+                   />Not Sure</label>
+      </div>
+                       
+          <div class="form-group">
+            <p>What is your favorite feature of Dottie</p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select a feature</option>
+              <option value="ears">Ears</option>
+              <option value="eyes">Eyes</option>
+              <option value="tail">Tail</option>
+              <option value="fur">Fur</option>
+            </select>
+          </div>
+          <div class="form-group">
+               <p>What would you like to see improved</p><span class="clue">(Check all that apply)</span>
+        <label>
+          <input
+                 name="prefer"
+                 value="behavior"
+                 type="checkbox"
+                 class="input-checkbox"
+                 />Behavior</label>
+            <label>
+              <input
+                     name="prefer"
+                     value="walking"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Walking</label>
+            <label>
+              <input
+                     name="prefer"
+                     value="shedding"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Shedding</label>
+            <label>
+              <input
+                     name="prefer"
+                     value="needy"
+                     type="checkbox"
+                     class="input-checkbox"
+                     />Neediness</label>
+          </div>
+            
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+                      id="comments"
+                      class="input-textarea"
+                      name="comment"
+                      placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit"
+                      class="submit-button">Submit</button>
+            
+            
+            </form>
